@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link href="/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+            <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="/">ITLA-shop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="/add-product">add-product</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+    </header>
+    <main class="container mt-5">
+      <div class="row">
+        <div class="col-12 col-sm-6 offset-sm-3">
+        <div class="card">
+          <div class="card-header bg-dark text-light">
+            <h5 class="text-center">Create product</h5>
+          </div>
+          <div class="card-body">
+            <form method="post" action="add-product">
+              <div class="mb-3">
+                <label for="product-name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="product-name" aria-describedby="textHelp" name="ProductName">
+              </div>
+              <div class="mb-3">
+                <label for="product-name" class="form-label">Description</label>
+                <textarea class="form-control" id="product-description" aria-describedby="textHelp" name="ProductDescription" rows="5"></textarea>
+              </div>
+                <div class="mb-3">
+                <label for="product-image" class="form-label">Image</label>
+                <input type="text" class="form-control" id="product-image" aria-describedby="textHelp" name="ProductImage">
+              </div>
+              <div class="mb-3">
+                <label for="product-price" class="form-label">Price:</label>
+                <input type="number" class="form-control" id="product-price" aria-describedby="numberHelp" name="ProductPriece" step="any">
+              </div>
+              <div>
+                <button type="submit" class="btn btn-outline-success float-end" name="submit">Submit</button>
+                <a class="btn btn-outline-warning float-end me-2" href="/">Back to home</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
