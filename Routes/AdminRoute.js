@@ -6,7 +6,7 @@ const product = [];
 const router = express.Router();
 
 router.get('/add-product', (req, res, next) => {
-    res.render("add-product", {layout: false, title:"New Product"})
+    res.render("add-product", {title:"New Product"})
 });
 
 router.post("/add-product", (req, res, next) => {
@@ -19,7 +19,5 @@ router.post("/add-product", (req, res, next) => {
     });
     res.redirect("/");
 });
-
-
 exports.route = router;
 exports.products = product; 

@@ -8,7 +8,6 @@ const router = express.Router();
 
 router.get('/', (req, res, next) => {
     res.render("shop", {
-        layout: false, 
         title:"shop Home",
         products: products,
         hasproduct: products.length > 0.
